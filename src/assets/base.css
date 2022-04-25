@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas:
+    "header header"
+    "sidenav content"
+    "footer footer";
+}
+
+#header,
+#content,
+#sidenav,
+#footer {
+  border: 1px solid green;
+}
+
+#header {
+  grid-area: header;
+}
+#header ul li {
+  display: inline;
+  padding: 5px;
+  margin: 0px 10px 0px 0px;
+  border: 1px solid black;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer {
+  grid-area: footer;
+}
+#footer ul li {
+  display: inline;
+  padding: 5px;
+  margin: 0px 10px 0px 0px;
+  border: 1px solid black;
+}
+#sidenav {
+  grid-area: sidenav;
+}
+#sidenav ul li {
+  display: block;
+  padding: 5px;
+  margin: 10px 192px 0px 0px;
+  border: 1px solid black;
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.muitofeio {
+  margin: 16px 0px 0px 100px;
+  height: 40%;
+  width: 22%;
+  color: rgb(91, 0, 119);
+  background-color: rgb(214, 252, 255);
+}
