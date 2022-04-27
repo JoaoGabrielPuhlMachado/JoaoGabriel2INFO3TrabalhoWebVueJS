@@ -6,12 +6,12 @@ export default {
 </script>
 <template>
   <main id="content">
-    <MaisUm class="muitofeio" />
-    <MaisUm class="muitofeio" />
-    <MaisUm class="muitofeio" />
-    <MaisUm class="muitofeio" />
-    <MaisUm class="muitofeio" />
-    <MaisUm class="muitofeio" />
+    <MaisUm titulo="Bloco 1" :nomes="['Heloisa', 'Eduardo']" />
+    <MaisUm titulo="URGENTE" class="alerta" :nomes="['Eduardo', 'Wedley']" />
+    <MaisUm />
+    <MaisUm class="alerta" />
+    <MaisUm />
+    <MaisUm />
   </main>
 </template>
 <style></style>
